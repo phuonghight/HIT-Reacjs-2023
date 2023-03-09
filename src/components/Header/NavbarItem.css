@@ -1,0 +1,17 @@
+.navbar__item {
+  cursor: pointer;
+}
+
+.navbar__item:hover a {
+  color: #46abdc;
+}
+
+.navbar__item--active a {
+  color: #46abdc;
+  transition: all 0.3s;
+}
+
+a {
+  padding: 10px 20px;
+  color: white;
+}
