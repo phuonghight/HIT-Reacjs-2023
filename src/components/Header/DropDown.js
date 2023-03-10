@@ -1,6 +1,5 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import DropDownList from "./DropDownList";
 import "./DropDown.css";
 
 const DropDown = ({ className }) => {

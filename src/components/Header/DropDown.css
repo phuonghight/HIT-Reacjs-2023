@@ -13,6 +13,7 @@
   display: none;
   width: 150%;
   background-color: white;
+  border-radius: 10px;
   position: absolute;
   top: 100%;
   left: 0;

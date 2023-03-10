@@ -1,10 +1,10 @@
 import React from "react";
 
-const NavbarButton = ({ className }) => {
+const NavbarButton = ({ path, name, className }) => {
   return (
-    <div className={className}>
-      <a>NavbarButton</a>
-    </div>
+    <a href={path} className={className}>
+      {name}
+    </a>
   );
 };
 

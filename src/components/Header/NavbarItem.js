@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import DropDown from "./DropDown";
 import DropDownList from "./DropDownList";
+import NavbarButton from "./NavbarButton";
 import "./NavbarItem.css";
 
 const NavbarItem = ({
@@ -21,6 +22,8 @@ const NavbarItem = ({
           <DropDown className="nav__link" />
           <DropDownList />
         </div>
+      ) : isNavbarButton ? (
+        <NavbarButton className="nav__link navbarBtn" name={name} path={path} />
       ) : (
         <a className="nav__link" href={path}>
           {name}

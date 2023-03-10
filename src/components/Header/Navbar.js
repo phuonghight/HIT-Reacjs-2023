@@ -1,54 +1,11 @@
 import React from "react";
 import NavbarItem from "./NavbarItem";
+import "./Navbar.css";
 
-const Navbar = () => {
-  const list = [
-    {
-      name: "Home",
-      path: "#hero",
-      isActive: true,
-    },
-    {
-      name: "About",
-      path: "#about",
-      isActive: false,
-    },
-    {
-      name: "Services",
-      path: "#services",
-      isActive: false,
-    },
-    {
-      name: "Portfolio",
-      path: "#porfolio",
-      isActive: false,
-    },
-    {
-      name: "Team",
-      path: "#team",
-      isActive: false,
-    },
-    {
-      name: "Drop Down",
-      path: "#",
-      dropdow: true,
-      isActive: false,
-    },
-    {
-      name: "Contact",
-      path: "#contact",
-      isActive: false,
-    },
-    {
-      name: "Get Started",
-      path: "#about",
-      isActive: false,
-      isNavbarButton: true,
-    },
-  ];
+const Navbar = ({ listNav }) => {
   return (
-    <ul className="navbar" style={{ display: "flex" }}>
-      {list.map((item) => (
+    <ul className="navbar">
+      {listNav.map((item) => (
         <NavbarItem
           name={item.name}
           path={item.path}
