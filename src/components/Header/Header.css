@@ -1,0 +1,16 @@
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition: all 0.3s ease-in-out;
+}

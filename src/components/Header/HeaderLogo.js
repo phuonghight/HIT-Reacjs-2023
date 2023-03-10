@@ -1,13 +1,11 @@
 import React from "react";
-import Navbar from "./Navbar";
 
 function HeaderLogo() {
   return (
     <div className="logo">
-      <a href="#" style={{ color: "white" }}>
+      <a href="#" style={{ color: "white", fontSize: "30px" }}>
         ARSHA
       </a>
-      <Navbar />
     </div>
   );
 }

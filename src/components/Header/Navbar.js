@@ -39,6 +39,12 @@ const Navbar = () => {
       path: "#contact",
       isActive: false,
     },
+    {
+      name: "Get Started",
+      path: "#about",
+      isActive: false,
+      isNavbarButton: true,
+    },
   ];
   return (
     <ul className="navbar" style={{ display: "flex" }}>
@@ -49,6 +55,7 @@ const Navbar = () => {
           dropdow={item?.dropdow}
           isActive={item.isActive}
           key={item.name}
+          isNavbarButton={item?.isNavbarButton}
         />
       ))}
     </ul>

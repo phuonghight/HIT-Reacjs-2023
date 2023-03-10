@@ -2,16 +2,27 @@
   cursor: pointer;
 }
 
-.navbar__item:hover a {
+.navbar__item:hover .nav__link {
   color: #46abdc;
 }
 
-.navbar__item--active a {
+.navbar__item--active .nav__link {
   color: #46abdc;
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 
 a {
-  padding: 10px 20px;
+  padding: 15px 20px;
   color: white;
+  display: block;
+}
+
+.navbarBtn {
+  border: 2px solid #46abdc;
+  border-radius: 100px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbarBtn:hover {
+  background-color: #46abdc;
 }

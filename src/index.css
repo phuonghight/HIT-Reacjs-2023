@@ -16,3 +16,7 @@ li {
 html {
   scroll-behavior: smooth;
 }
+
+body {
+  color: #444;
+}
