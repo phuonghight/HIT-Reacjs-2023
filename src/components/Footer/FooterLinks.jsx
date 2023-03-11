@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./FooterLinks.css";
 
 function FooterLinks({ data }) {
-  console.log(data);
   return (
     <div className="footer-links">
       <h4>{data.title}</h4>
