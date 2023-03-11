@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import React, { useEffect, useState } from "react";
 
 // Nhúng thư viện của bạn vào dự án
