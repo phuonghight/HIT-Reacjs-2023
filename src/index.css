@@ -3,6 +3,7 @@
 ::before {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -18,5 +19,15 @@ html {
 }
 
 body {
-  color: #444;
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Jost", sans-serif;
 }

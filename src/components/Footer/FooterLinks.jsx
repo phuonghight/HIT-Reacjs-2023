@@ -1,11 +1,15 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./FooterLinks.css";
 
 function FooterLinks({ data }) {
   console.log(data);
   return (
     <div className="footer-links">
       <h4>{data.title}</h4>
+
+      {data.des && <p>{data.des}</p>}
+
       {data.links && (
         <ul>
           {data.links.map((link) => (
@@ -15,6 +19,16 @@ function FooterLinks({ data }) {
             </li>
           ))}
         </ul>
+      )}
+
+      {data.socialNetworks && (
+        <div className="social-links">
+          {data.socialNetworks.map((item) => (
+            <a key={item.class} className={item.class} href={item.path}>
+              {item.icon}
+            </a>
+          ))}
+        </div>
       )}
     </div>
   );

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import FooterLinks from "./FooterLinks";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import './FooterTop.css'
 
 function FooterTop() {
   const [usefulLinks, setUsefulLiknks] = useState({
