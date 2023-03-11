@@ -57,7 +57,6 @@ function Header() {
     });
   }, [isScrollHeader]);
 
-  console.log("rereder");
   const [width, setWidth] = useState(window.innerWidth);
   useEffect(() => {
     window.addEventListener("resize", () => {
