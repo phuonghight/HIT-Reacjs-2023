@@ -16,6 +16,8 @@ import {
   faAngleRight,
 } from "@fortawesome/free-solid-svg-icons";
 
+import { faCirclePlay } from "@fortawesome/free-regular-svg-icons";
+
 //Add các icon đã được import vào trong thư viện của bạn
 library.add(
   faAngleDown,
@@ -26,5 +28,6 @@ library.add(
   faFacebookF,
   faInstagram,
   faSkype,
-  faLinkedinIn
+  faLinkedinIn,
+  faCirclePlay
 );

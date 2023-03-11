@@ -2,23 +2,15 @@
   padding: 60px 0 30px 0;
   background: #fff;
 }
-
-.container {
-  max-width: 1300px;
-  margin: 0 auto;
-}
-
 .footer-top .row {
   display: flex;
   flex-wrap: wrap;
 }
-
 .footer-top .footer-links,
 .footer-top .footer-contact {
   width: 25%;
   margin-bottom: 30px;
 }
-
 .footer-contact h3 {
   font-size: 28px;
   margin: 0 0 10px 0;
@@ -28,7 +20,6 @@
   font-weight: 600;
   color: #37517e;
 }
-
 .footer-contact p {
   font-size: 14px;
   line-height: 24px;
@@ -36,7 +27,6 @@
   font-family: "Jost", sans-serif;
   color: #5e5e5e;
 }
-
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .container {
     max-width: 720px;

@@ -1,0 +1,108 @@
+.banner {
+  width: 100%;
+  height: 80vh;
+  background: #37517e;
+  display: flex;
+  align-items: center;
+  padding: 60px 0;
+  overflow: hidden;
+}
+.banner .container {
+  padding-top: 70px;
+}
+.banner .container .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.banner-content,
+.banner-img {
+  width: 50%;
+}
+.banner .banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner .banner-content h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+.banner .banner-content h2 {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 50px;
+  font-size: 24px;
+}
+.banner .banner-content div {
+  display: flex;
+  align-items: center;
+}
+.banner .banner-content .btn-get-started {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px 11px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px 0 0 0;
+  color: #fff;
+  background: #47b2e4;
+}
+.banner .banner-content .btn-get-started:hover {
+  background: #209dd8;
+}
+.banner .banner-content .btn-watch-video {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  margin: 10px 0 0 25px;
+  color: #fff;
+  line-height: 1;
+}
+.banner .banner-content .btn-watch-video svg {
+  line-height: 0;
+  color: #fff;
+  font-size: 32px;
+  transition: 0.3s;
+  margin-right: 8px;
+}
+.banner .banner-img img {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  max-width: 100%;
+  height: auto;
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .banner {
+    height: 100vh;
+  }
+  .banner-content,
+  .banner-img {
+    width: 100%;
+    text-align: center;
+  }
+  .banner-content {
+    order: 2;
+  }
+  .banner .banner-img img {
+    width: 50%;
+    order: 1;
+    animation: none;
+  }
+  .banner .banner-content div {
+    justify-content: center;
+  }
+}
